@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Metadatos y estilos generales -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/2f01fe8e-cd14-470b-888c-54f6f4a20adf/mspesca.png?v=1736620685316"
+      type="image/png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <style>
+      /* Estilos personalizados */
+      .carousel-inner {
+        display: flex;
+        align-items: center; /* Centrar verticalmente */
+        justify-content: center; /* Centrar horizontalmente */
+        height: 500px; /* Tamaño fijo para el carrusel */
+        background-color: #f8f9fa; /* Fondo neutro para el carrusel */
+      }
+      .carousel-inner img,
+      body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Evita desplazamiento horizontal si el contenido es más grande */
+      }
+    </style>
+    <title>Inicio - MS Pesca</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img
+          src="https://cdn.glitch.global/2f01fe8e-cd14-470b-888c-54f6f4a20adf/mspesca.png?v=1736621084117"
+          alt="Tienda de Pesca"
+          class="logo"
+        />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h2>Bienvenido a MS Pesca</h2>
+        <a href="https://mspesca.glitch.me/productos.html" class="btn"
+          >Ver Productos</a
+        >
+      </section>
+
+      <!-- Sección de carrusel (ajustada para tamaños uniformes y centrado) -->
+      <section>
+        <div class="container">
+          <br />
+          <div id="galleryCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicadores -->
+            <ol class="carousel-indicators">
+              <li
+                data-target="#galleryCarousel"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#galleryCarousel" data-slide-to="1"></li>
+              <li data-target="#galleryCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Contenido del carrusel -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img
+                  src="https://cdn.glitch.global/2f01fe8e-cd14-470b-888c-54f6f4a20adf/1.png?v=1736626203673"
+                  alt="Imagen 0"
+                />
+                <div class="carousel-caption">
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  src="https://cdn.glitch.global/2f01fe8e-cd14-470b-888c-54f6f4a20adf/2.png?v=1736626324294"
+                  alt="Imagen 1"
+                />
+                <div class="carousel-caption"></div>
+              </div>
+              <div class="item">
+                <img
+                  src="https://cdn.glitch.global/2f01fe8e-cd14-470b-888c-54f6f4a20adf/3.png?v=1736626068731"
+                  alt="Imagen 2"
+                />
+              <div class="item">
+                <div class="carousel-caption"></div>
+              </div>
+                <div class="carousel-caption"></div>
+              </div>
+            <!-- Controles -->
+            <a
+              class="left carousel-control"
+              href="#galleryCarousel"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="glyphicon glyphicon-chevron-left"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a
+              class="right carousel-control"
+              href="#galleryCarousel"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="glyphicon glyphicon-chevron-right"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Siguiente</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer style="margin-top: 50px">
+      <p>
+        &copy; 2025 MS Pesca. Todos los derechos reservados | Powered by lkd.exe
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,179 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/2f01fe8e-cd14-470b-888c-54f6f4a20adf/Sin%20t%C3%ADtulo.png?v=1736454440346"
+      type="image/png"
+    />
+    <title>MS Pesca</title>
+  </head>
+  
+  <!DOCTYPE html>
+  <html lang="es">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="styles.css" />
+      <script src="script.js" defer></script>
+      <title>Ms Pesca</title>
+      <style>
+        body {
+          background-color: #f0f0f0; /* Fondo gris claro para toda la página */
+        }
+  
+        .detalle {
+          display: flex;
+          gap: 10px; /* Reduce el espacio entre los elementos */
+          align-items: flex-start;
+          background-color: white; /* Fondo blanco para las secciones combinadas */
+          padding: 20px; /* Espaciado alrededor de las imágenes y la descripción */
+          border-radius: 0px; /* Bordes redondeados */
+        }
+  
+        .mini-imagenes {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          background-color: #bdbdbdbd; /* Fondo blanco para las miniaturas */
+          padding: 10px;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+        }
+  
+        .imagenes-principales {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          background-color: white; /* Fondo blanco para la imagen principal */
+          padding: 10px;
+          border-radius: 8px;
+        }
+  
+        .imagenes-principales img {
+          width: 100%;
+          max-width: 500px; /* Asegura un tamaño máximo para la imagen principal */
+          height: auto;
+          border-radius: 8px;
+        }
+  
+        .mini-imagenes img {
+          width: 80px;
+          height: 80px;
+          object-fit: cover;
+          cursor: pointer;
+          border: 2px solid transparent;
+          border-radius: 4px;
+          transition: border 0.3s;
+        }
+  
+        .info {
+          flex: 2;
+          margin-left: 10px;
+          background-color: white; /* Fondo blanco para la descripción */
+          padding: 20px;
+          border-radius: 0px;
+        }
+  
+        h2,
+        p,
+        h3 {
+          background-color: white; /* Fondo blanco para los textos */
+          padding: 5px;
+          border-radius: 0px; /* Bordes redondeados */
+        }
+  
+        a.btn {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: #007bff;
+          color: white;
+          border-radius: 4px;
+          text-decoration: none;
+          margin-top: 10px;
+        }
+  
+        a.btn:hover {
+          background-color: #d1d1d1;
+        }
+      </style>
+    </head>
+    <body>
+      <header>
+        <a href="index.html">
+          <img
+            src="https://cdn.glitch.global/2f01fe8e-cd14-470b-888c-54f6f4a20adf/mspesca.png?v=1736621084117"
+            alt="MSPesca"
+            class="logo"
+          />
+        </a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="producto-detalle">
+          <h2>Kit Señuelos Tararira Antienganche</h2>
+          <div class="detalle">
+            <div class="mini-imagenes">
+              <img
+                src="https://cdn.glitch.global/2f01fe8e-cd14-470b-888c-54f6f4a20adf/D_NQ_NP_856756-MLA81023547225_112024-O.webp?v=1736625203191"
+                alt="Imagen 3"
+                class="mini-img"
+                onclick="zoomImage(this)"
+              />
+            </div>
+            <div class="imagenes-principales">
+              <img
+                id="mainImage"
+                src="https://cdn.glitch.global/2f01fe8e-cd14-470b-888c-54f6f4a20adf/D_NQ_NP_856756-MLA81023547225_112024-O.webp?v=1736625203191"
+                alt="Producto"
+                class="imagen-principal"
+              />
+            </div>
+            <div class="info">
+              <h3>$<span id="precio">25.000</span></h3>
+              <p>
+                - Variedad de Ranas con diferentes tonalidades son perfectas para
+                las mejores capturas.
+              </p>
+              <p>- Su formato especial evita los enganches indeseados</p>
+              <p>- Garantía del vendedor: 10 días.</p>
+                 <p>
+                - A variety of frogs with different colors are perfect for the best catches.
+              </p>
+              <p>- Its special shape prevents unwanted hooking</p>
+              <p>- Seller guarantee: 10 days.</p>
+              
+                <a
+                href="https://articulo.mercadolibre.com.ar/MLA-1967690762-kit-senuelos-tararira-antienganche-_JM?pdp_filters=condition%3Anew%7Cadult_content%3Ayes%7Cseller_id%3A2091646320#polycard_client=mshops-appearance-api&source=eshops"
+                id="buy-button"
+              >
+                <img
+                  src="https://cdn.glitch.global/2f01fe8e-cd14-470b-888c-54f6f4a20adf/77843325-83920880-718b-11ea-96af-4ab797403845.png?v=1736455933472"
+                  alt="Comprar"
+                  style="width: 150px; height: auto"
+                />
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p>Copyright&copy; 2025 MS Pesca | Powered by lkd.exe</p>
+      </footer>
+      <script>
+        function zoomImage(thumbnail) {
+          const mainImage = document.getElementById("mainImage");
+          mainImage.src = thumbnail.src;
+          mainImage.style.width = "100%";
+          mainImage.style.maxWidth = "500px"; /* Asegura un tamaño uniforme */
+          mainImage.style.height = "auto";
+        }
+      </script>
+    </body>
+  </html>
+  
